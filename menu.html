@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu - Japanese Restaurant</title>
+  <!-- Google Fonts: Noto Sans JP -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <div class="logo">JapaneseResto</div>
+    <nav id="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html" class="active">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="reservation.html" class="btn">Reservation</a></li>
+      </ul>
+    </nav>
+    <button id="menu-toggle" class="menu-toggle-btn">
+      <i class="fas fa-bars"></i>
+    </button>
+  </header>
+
+  <!-- Menu Page Section -->
+  <section class="menu-page">
+    <div class="section-title">
+      <h2>Our Full Menu</h2>
+      <p>Explore our wide range of authentic Japanese dishes.</p>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="menu-filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="sushi">Sushi</button>
+      <button class="filter-btn" data-filter="ramen">Ramen</button>
+      <button class="filter-btn" data-filter="ricebowl">Rice Bowl</button>
+      <button class="filter-btn" data-filter="bento">Bento</button>
+      <button class="filter-btn" data-filter="dessert">Dessert</button>
+      <button class="filter-btn" data-filter="drinks">Drinks</button>
+    </div>
+
+    <!-- Menu Grid -->
+    <div class="menu-grid">
+      <!-- Sushi -->
+      <div class="menu-card" data-category="sushi">
+        <img src="assets/sushi-deluxe.jpg" alt="Sushi Deluxe">
+        <h3>Sushi Deluxe</h3>
+        <p>A premium selection of our freshest nigiri and maki rolls.</p>
+        <span class="price">$18</span>
+      </div>
+      <div class="menu-card" data-category="sushi">
+        <img src="assets/sashimi.jpg" alt="Salmon Sashimi">
+        <h3>Salmon Sashimi</h3>
+        <p>Thick, buttery slices of premium-cut salmon.</p>
+        <span class="price">$16</span>
+      </div>
+
+      <!-- Ramen -->
+      <div class="menu-card" data-category="ramen">
+        <img src="assets/ramen-special.jpg" alt="Ramen Special">
+        <h3>Ramen Special</h3>
+        <p>Rich chashu, and a perfectly soft-boiled egg.</p>
+        <span class="price">$14</span>
+      </div>
+      <div class="menu-card" data-category="ramen">
+        <img src="assets/miso-ramen.jpeg" alt="Miso Soup">
+        <h3>Spicy Miso Ramen</h3>
+        <p>Hearty miso broth with a spicy kick.</p>
+        <span class="price">$15</span>
+      </div>
+
+      <!-- Rice Bowl -->
+      <div class="menu-card" data-category="ricebowl">
+        <img src="assets/ricebowl-beef.jpg" alt="Rice Bowl Beef">
+        <h3>Beef Rice Bowl</h3>
+        <p>Tender slices of beef and onion simmered in a sweet and savory dashi broth, served over rice.</p>
+        <span class="price">$16</span>
+      </div>
+      <div class="menu-card" data-category="ricebowl">
+        <img src="assets/sushi-ricebowl.jpg" alt="Sushi Rice Bowl">
+        <h3>Sashimi Rice Bowl</h3>
+        <p>A vibrant bowl of assorted sashimi, including tuna, salmon, and shrimp, over seasoned sushi rice.</p>
+        <span class="price">$20</span>
+      </div>
+      <div class="menu-card" data-category="ricebowl">
+        <img src="assets/chicken-katsu.jpeg" alt="Chicken Katsu">
+        <h3>Chicken Katsu</h3>
+        <p>Crispy fried chicken cutlet simmered with egg and onions in a savory sauce, served over rice.</p>
+        <span class="price">$15</span>
+      </div>
+
+      <!-- Bento -->
+      <div class="menu-card" data-category="bento">
+        <img src="assets/chicken-teriyaki-bento.jpg" alt="Chicken Teriyaki Bento">
+        <h3>Chicken Teriyaki Bento</h3>
+        <p>A complete meal with grilled chicken teriyaki, steamed rice, gyoza, and a fresh side salad.</p>
+        <span class="price">$17</span>
+      </div>
+
+      <!-- Dessert -->
+      <div class="menu-card" data-category="dessert">
+        <img src="assets/ice-cream-matcha.jpg" alt="Matcha Ice Cream">
+        <h3>Matcha Ice Cream</h3>
+        <p>Creamy, rich matcha-flavored ice cream.</p>
+        <span class="price">$7</span>
+      </div>
+      <div class="menu-card" data-category="dessert">
+        <img src="assets/takoyaki.jpeg" alt="Takoyaki">
+        <h3>Takoyaki</h3>
+        <p>Savory octopus-filled batter balls, fried and topped with tangy sauce and bonito flakes.</p>
+        <span class="price">$8</span>
+      </div>
+
+      <!-- Drinks -->
+      <div class="menu-card" data-category="drinks">
+        <img src="assets/matcha-hot.jpg" alt="Hot Matcha Latte">
+        <h3>Hot Matcha Latte</h3>
+        <p>Matcha with frothy milk for a smooth and comforting drink.</p>
+        <span class="price">$6</span>
+      </div>
+       <div class="menu-card" data-category="drinks">
+        <img src="assets/matcha-latte-ice.jpeg" alt="Ice Matcha Latte">
+        <h3>Iced Matcha Latte</h3>
+        <p>A refreshing blend of authentic Japanese matcha and cold milk, served over ice.</p>
+        <span class="price">$6</span>
+      </div>
+      <div class="menu-card" data-category="drinks">
+        <img src="assets/oolong-tea-hot.jpg" alt="Hot Oolong Tea">
+        <h3>Hot Oolong Tea</h3>
+        <p>A fragrant, full-bodied oolong tea, traditionally brewed to perfection.</p>
+        <span class="price">$4</span>
+      </div>
+      <div class="menu-card" data-category="drinks">
+        <img src="assets/oolong-tea-ice.jpeg" alt="Ice Oolong Tea">
+        <h3>Ice Oolong Tea</h3>
+        <p>Crisp and refreshing oolong tea, freshly brewed and served chilled over ice.</p>
+        <span class="price">$4</span>
+      </div>
+      <div class="menu-card" data-category="drinks">
+        <img src="assets/blacktea.jpg" alt="Blacktea">
+        <h3>Japanese Black Tea</h3>
+        <p>A rare and smooth Japanese black tea with notes of honey and a mellow finish.</p>
+        <span class="price">$5</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3 class="footer-title">JapaneseResto</h3>
+                <p class="footer-description">
+                    Experience authentic Japanese flavors crafted with traditional techniques and the finest ingredients.
+                </p>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Facebook">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Twitter">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4 class="footer-heading">Contact Info</h4>
+                <div class="contact-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                    </svg>
+                    <span>123 Sushi Street, Tokyo, JP 12345</span>
+                </div>
+                <div class="contact-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                    </svg>
+                    <span>(555) 123-4567</span>
+                </div>
+                <div class="contact-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                    </svg>
+                    <span>contact@japaneseresto.com</span>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4 class="footer-heading">Hours</h4>
+                <div class="hours-list">
+                    <div class="hours-item">
+                        <span class="day">Monday - Friday</span>
+                        <span class="time">11:00 AM - 10:00 PM</span>
+                    </div>
+                    <div class="hours-item">
+                        <span class="day">Saturday - Sunday</span>
+                        <span class="time">10:00 AM - 11:00 PM</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4 class="footer-heading">Quick Links</h4>
+                <nav class="footer-nav">
+                    <a href="index.html" class="footer-link">Home</a>
+                    <a href="menu.html" class="footer-link">Menu</a>
+                    <a href="about.html" class="footer-link">About</a>
+                    <a href="contact.html" class="footer-link">Contact</a>
+                    <a href="reservation.html" class="footer-link">Reservation</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-container">
+                <p class="copyright">© 2025 JapaneseResto. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#privacy" class="footer-bottom-link">Privacy Policy</a>
+                    <a href="#terms" class="footer-bottom-link">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+  <!-- JS for filtering -->
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const menuCards = document.querySelectorAll('.menu-card');
+
+      filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          // Set active class on button
+          filterButtons.forEach(btn => btn.classList.remove('active'));
+          button.classList.add('active');
+
+          const filter = button.getAttribute('data-filter');
+
+          // Show/hide menu cards
+          menuCards.forEach(card => {
+            if (filter === 'all' || card.getAttribute('data-category') === filter) {
+              card.style.display = 'block';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
