@@ -28,6 +28,7 @@ header {
   font-size: 1.8rem;
   font-weight: bold;
   color: #b22222;
+  text-decoration: none;
   margin-right: auto; /* Pushes nav to the right */
 }
 
@@ -61,6 +62,12 @@ nav ul li a {
   cursor: pointer;
   text-decoration: none; /* Remove underline */
   font-weight: 500;
+}
+
+.btn.active {
+  box-shadow: 0 0 0 3px white, 0 0 0 5px #ff5f6d;
+  /* A subtle glow to indicate it's active */
+  filter: brightness(1.1);
 }
 
 .btn-outline {
@@ -262,11 +269,8 @@ section {
 
 .menu-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Adjusted for smaller cards */
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Use auto-fit for responsiveness */
   gap: 25px;
-  grid-template-columns: repeat(4, 1fr);
-
 }
 
 .menu-card {
@@ -793,6 +797,11 @@ section:last-of-type + .footer {
   .contact-map {
     /* Ensure map appears below info on mobile */
     grid-row: 2;
+    min-height: 300px; /* Adjust map height for mobile */
+  }
+
+  .contact-map iframe {
+    min-height: 300px;
   }
 }
 
