@@ -44,6 +44,14 @@ nav ul li a {
   font-weight: 500;
 }
 
+.menu-toggle-btn {
+  display: none; /* Hidden by default on desktop */
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
 .btn {
   background: linear-gradient(90deg, #b22222, #ff5f6d);
   color: white;
@@ -592,6 +600,41 @@ section:last-of-type + .footer {
     }
 }
 
+/* Responsive Navbar */
+@media (max-width: 992px) {
+  header {
+    padding: 15px 4%;
+  }
+
+  .menu-toggle-btn {
+    display: block; /* Show hamburger icon */
+    z-index: 1001; /* Ensure it's above the nav menu */
+    color: #333;
+  }
+
+  nav#navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100vh;
+    background: #fff;
+    box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    padding-top: 80px;
+  }
+
+  nav#navbar.is-active {
+    transform: translateX(0);
+  }
+
+  nav#navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .hero-content h1 {
@@ -613,6 +656,10 @@ section:last-of-type + .footer {
   }
   .about-image {
     display: none; /* Hide image on mobile for a cleaner look */
+  }
+
+  nav#navbar {
+    width: 100%; /* Full width nav on smaller mobile */
   }
 }
 
